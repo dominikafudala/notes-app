@@ -1,0 +1,37 @@
+@use 'styles/global' as *;
+@use 'styles/utils' as *;
+
+.button {
+    width: rem(220);
+    height: rem(47);
+    border: none;
+    border-radius: rem(50);
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: rem(16);
+    text-transform: uppercase;
+}
+
+.pink{
+    background-color: $pink;
+}
+
+.salmon {
+    background-color: $salmon;
+}
+
+.green {
+    background-color: $green;
+}
+
+.orange {
+    background-color: $orange;
+}
+
+.secondary {
+   @extend .button;
+   background-color: $grayish;
+   width: rem(105);
+   height: rem(30);
+   font-size: rem(10);
+}
