@@ -1,0 +1,37 @@
+@use 'styles/global' as *;
+@use 'styles/utils' as *;
+
+.input {
+    padding: em(15) em(30);
+    font-size: $font-size__s;
+    font-weight: $font-weight__regular;
+    background-color: $beige;
+    border: none;
+    border-radius: rem(50);
+
+    &::placeholder {
+        text-transform: lowercase;
+        font-size: $font-size__s;
+        letter-spacing: rem(1);
+        color: $gray-dark;
+  }
+
+    &:focus{
+      outline-color: $pink;
+      outline-width: 3px;
+    }
+}
+
+.search {
+  @extend .input;
+  padding: em(10) em(20) em(10) em(52);
+  font-size: $font-size__xs;
+  background-image: url('/assets/icons/magnifier.svg');
+  background-size: rem(14);
+  background-position: rem(15) 50%;
+  background-repeat: no-repeat;
+
+  &::placeholder {
+    font-size: $font-size__xs;
+}
+}

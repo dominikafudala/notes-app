@@ -1,0 +1,6 @@
+@use 'styles/global' as *;
+
+p {
+    font-size: $font-size__s;
+    font-weight: $font-weight__regular;
+}

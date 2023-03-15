@@ -1,0 +1,21 @@
+@use 'styles/global' as *;
+@use 'styles/utils' as *;
+
+.buttonIcon {
+    width: rem(67);
+    height: rem(67);
+    border-radius: rem(20);
+    border: none;
+    
+    .icon{
+        width: 40%;
+    }
+
+    &.active{
+        background-color: white;
+    }
+
+    &.inactive{
+        background-color: transparent;
+    }
+}

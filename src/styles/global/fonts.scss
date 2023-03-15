@@ -1,1 +1,13 @@
+@use 'styles/utils' as *;
+
 $font-montserrat: 'Montserrat', sans-serif;
+
+$font-size__xxs: rem(10);
+$font-size__xs: rem(12);
+$font-size__s: rem(16);
+$font-size__m: rem(21);
+$font-size__l: rem(24);
+$font-size__xl: rem(40);
+
+$font-weight__regular: 400;
+$font-weight__bold: 600;

@@ -1,0 +1,13 @@
+@use 'styles/global' as *;
+
+h1 {
+    font-weight: $font-weight__bold;
+
+    &.l {
+        font-size: $font-size__l;
+    }
+
+    &.xl {
+        font-size: $font-size__xl;
+    }
+}
