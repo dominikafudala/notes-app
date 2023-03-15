@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from 'components/atoms/Button/Button';
-import './Root.scss';
+import 'styles/base/_reset.scss';
 
 const Root = () => (
   <div>
