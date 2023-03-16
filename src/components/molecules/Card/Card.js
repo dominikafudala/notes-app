@@ -10,6 +10,18 @@ const Card = ({ cardType }) => (
     <div className={`${styles.heading} ${styles[cardType]}`}>
       <Heading>This is heading</Heading>
       <div className={styles.date}>3 days</div>
+      {cardType === 'twitter' && (
+        <img
+          className={styles.twitterAvatar}
+          src="https://unavatar.io/kikobeats"
+          alt="Twitter logo"
+        />
+      )}
+      {cardType === 'article' && (
+        <a className={styles.articleLink} href="https://twitter.com/" aria-label="Link to article">
+          <span className="visually-hidden">Link to article </span>
+        </a>
+      )}
     </div>
     <div className={styles.info}>
       <Paragraph>

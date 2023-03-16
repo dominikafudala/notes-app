@@ -8,13 +8,15 @@
     box-shadow: 0 10px 30px -10px hsla(0, 0%, 0%, 0.1);
     overflow: hidden;
     display: grid;
-    grid-template-rows: .3fr 1fr;
+    grid-template-rows: .34fr 1fr;
 
     > * {
         padding: em(20) em(28);
     }
 
     .heading{
+        position: relative;
+
         &.note {
             background-color: $pink;
         }
@@ -25,6 +27,30 @@
 
         &.article {
             background-color: $orange;
+        }
+
+        .twitterAvatar {
+            position: absolute;
+            right: rem(28);
+            top: 30%;
+            width: rem(80);
+            height: rem(80);
+            border-radius: 50%;
+            border: 5px solid $salmon;
+        }
+
+        .articleLink {
+            display: block;
+            position: absolute;
+            background: white url('/assets/icons/link.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: rem(52);
+            height: rem(52);
+            top: 50%;
+            right: rem(28);
+            transform: translateY(-50%);
+            border-radius: 50%;
         }
     }
 
