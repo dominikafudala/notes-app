@@ -2,7 +2,7 @@ import React from 'react';
 import Input from './Input';
 
 export default {
-  title: 'FavNote/Input',
+  title: 'FavNote/Atoms/Input',
   component: Input,
 };
 

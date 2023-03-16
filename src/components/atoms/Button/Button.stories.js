@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 
 export default {
-  title: 'FavNote/Button',
+  title: 'FavNote/Atoms/Button',
   component: Button,
   argTypes: {
     colorTheme: {

@@ -2,7 +2,7 @@ import React from 'react';
 import Paragraph from './Paragraph';
 
 export default {
-  title: 'FavNote/Paragraph',
+  title: 'FavNote/Atoms/Paragraph',
   component: Paragraph,
 };
 

@@ -4,7 +4,7 @@ import plus from 'assets/icons/plus.svg';
 import ButtonIcon from './ButtonIcon';
 
 export default {
-  title: 'FavNote/ButtonIcon',
+  title: 'FavNote/Atoms/ButtonIcon',
   component: ButtonIcon,
   decorators: [
     (Story) => (

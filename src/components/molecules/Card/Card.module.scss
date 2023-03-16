@@ -15,8 +15,16 @@
     }
 
     .heading{
-        &.pink {
+        &.note {
             background-color: $pink;
+        }
+
+        &.twitter {
+            background-color: $salmon;
+        }
+
+        &.article {
+            background-color: $orange;
         }
     }
 

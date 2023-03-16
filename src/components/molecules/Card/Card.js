@@ -1,13 +1,13 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Heading from 'components/atoms/Heading/Heading';
 import Paragraph from 'components/atoms/Paragraph/Paragraph';
 import Button from 'components/atoms/Button/Button';
 import styles from './Card.module.scss';
 
-const Card = () => (
+const Card = ({ cardType }) => (
   <div className={styles.wrapper}>
-    <div className={`${styles.heading} ${styles.pink}`}>
+    <div className={`${styles.heading} ${styles[cardType]}`}>
       <Heading>This is heading</Heading>
       <div className={styles.date}>3 days</div>
     </div>
@@ -21,5 +21,13 @@ const Card = () => (
     </div>
   </div>
 );
+
+Card.propTypes = {
+  cardType: PropTypes.oneOf(['twitter', 'note', 'article']),
+};
+
+Card.defaultProps = {
+  cardType: 'note',
+};
 
 export default Card;
