@@ -1,5 +1,6 @@
 import React from 'react';
+import Sidebar from 'components/organisms/Sidebar/Sidebar';
 
-const NotesView = () => <h1>Notes View</h1>;
+const NotesView = () => <Sidebar />;
 
 export default NotesView;

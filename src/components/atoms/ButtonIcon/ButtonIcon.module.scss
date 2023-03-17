@@ -2,13 +2,21 @@
 @use 'styles/utils' as *;
 
 .buttonIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: rem(67);
     height: rem(67);
     border-radius: rem(20);
     border: none;
+    cursor: pointer;
     
     .icon{
-        width: 40%;
+        height: rem(24);
+    }
+
+    .biggerIcon {
+        height: rem(26);
     }
 
     &.active{
