@@ -1,0 +1,25 @@
+@use 'styles/global' as *;
+@use 'styles/utils' as *;
+
+.wrapper{
+    width: rem(100);
+    height: 100vh;
+    background-color: $pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: em(20) em(10);
+    gap: rem(40);
+
+    .linkWrapper {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+        height: 100%;
+
+        li:nth-last-child(1){
+            margin-top: auto;
+        }
+    }
+}
