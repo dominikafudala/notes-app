@@ -1,6 +1,10 @@
 import React from 'react';
-import Sidebar from 'components/organisms/Sidebar/Sidebar';
+import UserPageTemplate from 'templates/UserPageTemplate';
 
-const NotesView = () => <Sidebar />;
+const NotesView = () => (
+  <UserPageTemplate type="notes">
+    <h1>Notes View</h1>
+  </UserPageTemplate>
+);
 
 export default NotesView;

@@ -2,6 +2,9 @@
 @use 'styles/utils' as *;
 
 .wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: rem(100);
     height: 100vh;
     background-color: $pink;
@@ -10,6 +13,18 @@
     align-items: center;
     padding: em(20) em(10);
     gap: rem(40);
+
+    &.note {
+        background-color: $pink;
+    }
+
+    &.twitter {
+        background-color: $salmon;
+    }
+
+    &.article {
+        background-color: $orange;
+    }
 
     .linkWrapper {
         list-style-type: none;
