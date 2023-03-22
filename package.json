@@ -59,6 +59,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.1.1",
     "sass": "^1.58.3",
+    "storybook-react-context": "^0.6.0",
     "webpack": "^5.75.0"
   },
   "husky": {

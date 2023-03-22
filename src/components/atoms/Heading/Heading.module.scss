@@ -2,6 +2,7 @@
 
 h1 {
     font-weight: $font-weight__bold;
+    text-transform: capitalize;
 
     &.l {
         font-size: $font-size__l;
