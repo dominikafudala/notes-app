@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { element } from 'prop-types';
 import ThemeContext from 'contexts/ThemeContext';
 import Sidebar from 'components/organisms/Sidebar/Sidebar';
 import Input from 'components/atoms/Input/Input';
@@ -20,7 +20,7 @@ const UserPageTemplate = ({ children, type, heading }) => (
 );
 
 UserPageTemplate.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.arrayOf(element).isRequired,
   type: PropTypes.oneOf(['note', 'twitter', 'article']),
   heading: PropTypes.string.isRequired,
 };

@@ -2,7 +2,10 @@
 
 h1 {
     font-weight: $font-weight__bold;
-    text-transform: capitalize;
+    
+    &::first-letter{
+        text-transform: uppercase;
+    }
 
     &.l {
         font-size: $font-size__l;

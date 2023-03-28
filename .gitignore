@@ -25,3 +25,5 @@ yarn-error.log*
 /src/stories
 .eslintrc.json
 .prettierrc
+
+/src/properties.js
