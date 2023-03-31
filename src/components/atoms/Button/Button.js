@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './Button.module.scss';
 
 const Button = ({ children, secondary, colorTheme }) => (
-  <button
-    className={`${secondary ? styles.secondary : styles.button} ${styles[colorTheme]}`}
-    type="button"
-  >
+  <button className={`${secondary ? styles.secondary : styles.button} ${styles[colorTheme]}`} type="button">
     {children}
   </button>
 );
@@ -14,13 +11,13 @@ const Button = ({ children, secondary, colorTheme }) => (
 Button.propTypes = {
   children: PropTypes.string,
   secondary: PropTypes.bool,
-  colorTheme: PropTypes.oneOf(['pink', 'salmon', 'green', 'orange']),
+  colorTheme: PropTypes.oneOf(['note', 'twitter', 'green', 'article']),
 };
 
 Button.defaultProps = {
   children: 'Hi',
   secondary: false,
-  colorTheme: 'pink',
+  colorTheme: 'note',
 };
 
 export default Button;

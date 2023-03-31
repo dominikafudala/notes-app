@@ -1,0 +1,44 @@
+@use 'styles/utils' as *;
+@use 'styles/global' as *;
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: rem(36);
+
+    .heading{
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: rem(12);
+
+        .link {
+            text-transform: uppercase;
+            color: $gray-700;
+            font-weight: $font-weight__bold;
+        }
+    }
+
+    .buttonWrapper{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: rem(12);
+
+        .remove{
+            padding-left: em(8);
+            background-color: transparent;
+            border: none;
+            color: $gray-700;
+            font-weight: $font-weight__bold;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

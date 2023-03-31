@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Heading from 'components/atoms/Heading/Heading';
 import Paragraph from 'components/atoms/Paragraph/Paragraph';
@@ -13,8 +16,10 @@ const Card = ({ content }) => {
   const difference = Math.abs(dateNow - dateCreated);
   const daysFromCreated = Math.ceil(difference / (1000 * 3600 * 24));
 
+  const navigate = useNavigate();
+
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} onClick={() => navigate(`/${theme}s/${content.id}`)}>
       <div className={`${styles.heading} ${styles[theme]}`}>
         <Heading>{content.title}</Heading>
         <div className={styles.date}>

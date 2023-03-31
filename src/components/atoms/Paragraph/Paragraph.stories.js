@@ -8,3 +8,6 @@ export default {
 
 const Template = (args) => <Paragraph {...args} />;
 export const Normal = Template.bind({});
+
+export const Uppercase = Template.bind({});
+Uppercase.args = { upper: true };

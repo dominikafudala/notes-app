@@ -3,4 +3,8 @@
 p {
     font-size: $font-size__s;
     font-weight: $font-weight__regular;
+
+    &.upper{
+        text-transform: uppercase;
+    }
 }

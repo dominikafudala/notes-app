@@ -20,7 +20,7 @@ const Sidebar = () => {
       <ul className={styles.linkWrapper}>
         <li>
           {' '}
-          <ButtonIcon exact as={NavLink} to="/" icon={penIcon} iconName="pen" />
+          <ButtonIcon exact as={NavLink} to="/notes" icon={penIcon} iconName="pen" />
         </li>
         <li>
           <ButtonIcon as={NavLink} to="/twitters" icon={twitterIcon} iconName="twitter" />

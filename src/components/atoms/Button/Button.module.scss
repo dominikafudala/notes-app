@@ -4,34 +4,51 @@
 .button {
     width: rem(220);
     height: rem(47);
-    border: none;
-    border-radius: rem(50);
+    border: rem(4) solid;
+    background-color: transparent;
     font-weight: 600;
     font-size: rem(16);
     text-transform: uppercase;
     cursor: pointer;
+
+    &.note {
+        border-color: $pink;
+    }
+
+    &.twitter {
+        border-color: $salmon;
+    }
+
+    &.article{
+        border-color: $orange;
+    }
 }
 
-.pink{
+.note:hover{
     background-color: $pink;
 }
 
-.salmon {
+.twitter:hover {
     background-color: $salmon;
 }
 
-.green {
+.green:hover {
     background-color: $green;
 }
 
-.orange {
+.article:hover {
     background-color: $orange;
 }
 
 .secondary {
    @extend .button;
    background-color: $grayish;
+   border: none;
    width: rem(105);
    height: rem(30);
    font-size: rem(10);
+}
+
+.secondary:hover{
+    background-color: $red;
 }

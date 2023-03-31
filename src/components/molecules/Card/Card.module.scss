@@ -3,11 +3,12 @@
 
 .wrapper {
     height: rem(380);
-    border-radius: 10px;
+    border-radius: rem(4);
     box-shadow: 0 10px 30px -10px hsla(0, 0%, 0%, 0.1);
     overflow: hidden;
     display: grid;
     grid-template-rows: .34fr 1fr;
+    cursor: pointer;
 
     > * {
         padding: em(20) em(28);
