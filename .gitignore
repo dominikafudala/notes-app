@@ -26,4 +26,4 @@ yarn-error.log*
 .eslintrc.json
 .prettierrc
 
-/src/properties.js
+.env
