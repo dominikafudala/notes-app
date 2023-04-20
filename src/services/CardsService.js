@@ -16,6 +16,11 @@ class CardService {
       return -1;
     }
   }
+
+  static async deleteCardFromId(id) {
+    const req = await apiClient().delete(`${this.#CARD_API}/${id}`);
+    return req.data;
+  }
 }
 
 export default CardService;

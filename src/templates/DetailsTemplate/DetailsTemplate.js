@@ -54,7 +54,7 @@ const DetailsTemplate = () => {
           <div className={styles.buttonWrapper}>
             <Button colorTheme={type}>Close / Save</Button>
             <button className={styles.remove} type="submit">
-              remove note
+              remove item
             </button>
           </div>
         </main>

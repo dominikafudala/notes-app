@@ -9,7 +9,7 @@ const CardsReducer = (state = cardsInitialState, { type, payload }) => {
         ...state,
         isLoading: true,
         cardsOfType: null,
-        errorMsg: null,
+        errMsg: null,
       };
     case cardsActionTypes.CARDS_LOAD_ALL_BY_TYPE:
       return {
@@ -17,11 +17,22 @@ const CardsReducer = (state = cardsInitialState, { type, payload }) => {
         isLoading: false,
         cardsOfType: payload,
       };
-    case cardsActionTypes.CARDS_LOAD_ERROR:
+    case cardsActionTypes.CARDS_ERROR:
       return {
         ...state,
         isLoading: false,
-        errorMsg: payload,
+        errMsg: payload,
+      };
+    case cardsActionTypes.CARD_DELETE_START:
+      return {
+        ...state,
+        isLoading: true,
+      };
+    case cardsActionTypes.CARD_DELETE:
+      return {
+        ...state,
+        isLoading: false,
+        cardsOfType: state.cardsOfType.filter((card) => card.id !== payload),
       };
     default:
       return state;

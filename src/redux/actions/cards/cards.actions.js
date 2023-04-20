@@ -9,13 +9,24 @@ const cardsLoadAllByType = (cardsOfType) => ({
   payload: cardsOfType,
 });
 
-const cardsLoadError = (errorMsg) => ({
-  type: cardsActionTypes.CARDS_LOAD_ERROR,
+const cardsError = (errorMsg) => ({
+  type: cardsActionTypes.CARDS_ERROR,
   payload: errorMsg,
+});
+
+const cardDeleteStart = () => ({
+  type: cardsActionTypes.CARD_DELETE_START,
+});
+
+const cardDeleteFromId = (id) => ({
+  type: cardsActionTypes.CARD_DELETE,
+  payload: id,
 });
 
 export default {
   cardsLoadStart,
   cardsLoadAllByType,
-  cardsLoadError,
+  cardsError,
+  cardDeleteStart,
+  cardDeleteFromId,
 };
