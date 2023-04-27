@@ -16,3 +16,13 @@ export const deleteCardFromId = (id) => (dispatch) => {
     .then(() => dispatch(cardsActions.cardDeleteFromId(id)))
     .catch((errMsg) => dispatch(cardsActions.cardsError(errMsg)));
 };
+
+export const addNewItem = (newItem) => (dispatch) => {
+  dispatch(cardsActions.cardAddNewItemStart());
+
+  CardService.addNewItem(newItem)
+    .then((newItemVal) => {
+      dispatch(cardsActions.cardAddNewItem(newItemVal));
+    })
+    .catch((errMsg) => dispatch(cardsActions.cardsError(errMsg)));
+};

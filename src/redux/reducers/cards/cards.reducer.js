@@ -34,6 +34,17 @@ const CardsReducer = (state = cardsInitialState, { type, payload }) => {
         isLoading: false,
         cardsOfType: state.cardsOfType.filter((card) => card.id !== payload),
       };
+    case cardsActionTypes.CARD_ADD_NEW_ITEM_START:
+      return {
+        ...state,
+        isLoading: true,
+      };
+    case cardsActionTypes.CARD_ADD_NEW_ITEM:
+      return {
+        ...state,
+        isLoading: false,
+        cardsOfType: [...state.cardsOfType, payload],
+      };
     default:
       return state;
   }

@@ -26,4 +26,20 @@
     &.inactive{
         background-color: transparent;
     }
+
+    &.note {
+        background-color: $pink;
+    }
+
+    &.twitter {
+        background-color: $salmon;
+    }
+
+    &.article{
+        background-color: $orange;
+    }
+
+    &.round {
+        border-radius: 50%;
+    }
 }

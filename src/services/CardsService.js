@@ -21,6 +21,11 @@ class CardService {
     const req = await apiClient().delete(`${this.#CARD_API}/${id}`);
     return req.data;
   }
+
+  static async addNewItem(newItem) {
+    const req = await apiClient().post(`${this.#CARD_API}/newitem`, newItem);
+    return req.data;
+  }
 }
 
 export default CardService;

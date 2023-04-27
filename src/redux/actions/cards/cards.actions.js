@@ -23,10 +23,21 @@ const cardDeleteFromId = (id) => ({
   payload: id,
 });
 
+const cardAddNewItemStart = () => ({
+  type: cardsActionTypes.CARD_ADD_NEW_ITEM_START,
+});
+
+const cardAddNewItem = (newItem) => ({
+  type: cardsActionTypes.CARD_ADD_NEW_ITEM,
+  payload: newItem,
+});
+
 export default {
   cardsLoadStart,
   cardsLoadAllByType,
   cardsError,
   cardDeleteStart,
   cardDeleteFromId,
+  cardAddNewItemStart,
+  cardAddNewItem,
 };

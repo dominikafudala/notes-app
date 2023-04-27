@@ -22,7 +22,7 @@ const GridCardsTemplate = () => {
   return (
     <LoadingConditional isLoading={isLoading}>
       <main className={styles.main}>
-        <Input placeholder="search" search />
+        <Input placeholder="search" search name="search" />
         <Heading>{`${type}s`}</Heading>
         <Paragraph>{`${cardsOfType !== null ? cardsOfType.length : 0} ${type}s`}</Paragraph>
         {errMsg !== null && <h1>{`Something went wrong ${errMsg}`}</h1>}
