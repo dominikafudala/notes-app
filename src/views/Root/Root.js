@@ -6,6 +6,7 @@ import routes from 'routes/routes';
 import NotesView from 'views/NotesView/NotesView';
 import ArticlesView from 'views/ArticlesView/ArticlesView';
 import TwittersView from 'views/TwittersView/TwittersView';
+import LoginView from 'views/LoginView/LoginView';
 
 import DetailsTemplate from 'templates/DetailsTemplate/DetailsTemplate';
 
@@ -19,6 +20,7 @@ const Root = () => (
       <Route path={routes.articleId} element={<DetailsTemplate />} />
       <Route exact path={routes.twitters} element={<TwittersView />} />
       <Route path={routes.twitterId} element={<DetailsTemplate />} />
+      <Route path={routes.login} element={<LoginView />} />
     </Routes>
   </BrowserRouter>
 );

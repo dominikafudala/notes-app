@@ -1,0 +1,67 @@
+@use 'styles/utils' as *;
+@use 'styles/global' as *;
+
+.wrapper{
+    height: 100vh;
+    background-color:$pink;
+    position: relative;
+
+    .main{
+        width: rem(400);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .logo{
+            height: rem(80);
+            margin-bottom: rem(20);
+        }
+
+        .icons{
+            width: 100%;
+            display: flex;
+            gap: rem(30);
+            justify-content: center;
+            align-items: center;
+            margin: rem(20) auto;
+            img{
+                height: rem(38);
+            }
+            img:nth-child(3) {
+                height: rem(42);
+            }
+        }
+
+        form {
+            background-color: white;
+            height: rem(380);
+            border-radius: 8px;
+            padding: em(20);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .inputs{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: rem(10);
+            }
+
+            .actions{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: rem(8);
+
+                a{
+                    color: black
+                }
+            }
+        }
+    }
+}

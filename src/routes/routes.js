@@ -5,6 +5,7 @@ const routes = {
   articleId: '/articles/:id',
   twitters: '/twitters',
   twitterId: '/twitters/:id',
+  login: '/login',
 };
 
 export default routes;
