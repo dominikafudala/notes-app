@@ -6,6 +6,7 @@ const routes = {
   twitters: '/twitters',
   twitterId: '/twitters/:id',
   login: '/login',
+  signup: '/signup',
 };
 
 export default routes;

@@ -11,7 +11,18 @@ class UserService {
   }
 
   static async signup(username, password) {
-    await apiClient().get(`${this.#USER_API}/signup?username=${username}&password=${password}`);
+    await apiClient().post(`${this.#USER_API}/signup?username=${username}&password=${password}`);
+  }
+
+  static getAccessToken() {
+    ReactSession.setStoreType('localStorage');
+    return ReactSession.get('favnote_access_token');
+  }
+
+  static async checkCredentials() {
+    const token = this.getAccessToken();
+    const req = await apiClient().get(`${this.#USER_API}/check?token=${token}`);
+    return req.data;
   }
 }
 
